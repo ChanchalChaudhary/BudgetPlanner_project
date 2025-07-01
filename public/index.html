@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Budget Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Budget Planner</h1>
+  <div>
+    <h3>Add Budget</h3>
+    <input id="b-cat" placeholder="Category">
+    <input id="b-amt" type="number" placeholder="Amount">
+    <button onclick="addBudget()">Add Budget</button>
+  </div>
+
+  <div>
+    <h3>Add Expense</h3>
+    <input id="e-cat" placeholder="Category">
+    <input id="e-amt" type="number" placeholder="Amount">
+    <input id="e-note" placeholder="Note">
+    <button onclick="addExpense()">Add Expense</button>
+  </div>
+
+  <div>
+    <h3>Report</h3>
+    <button onclick="loadReport()">View Report</button>
+    <ul id="report"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
